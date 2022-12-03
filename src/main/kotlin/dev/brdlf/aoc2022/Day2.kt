@@ -30,10 +30,10 @@ class Day2: Day {
     private fun Int.tie(): Int = this + 4
     private fun Int.lose(): Int = (this+2).mod(3) + 1
     private val p1: (Pair<Int, Int>) -> Int = {
-        when(it.second){
-            0 -> it.first.lose()
-            1 -> it.first.tie()
-            2 -> it.first.win()
+        when(it.second - it.first){
+            0 -> 4 + it.second// tie
+            -1, 2 -> 1 + it.second// lose
+            -2, 1 -> 7 + it.second// win
             else -> throw Exception("part1")
         }
     }
