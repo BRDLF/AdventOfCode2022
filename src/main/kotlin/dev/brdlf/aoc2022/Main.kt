@@ -3,7 +3,9 @@ package dev.brdlf.aoc2022
 import java.io.FileNotFoundException
 
 //TODO: Update as needed
-const val MAX_DAY = 2
+const val MAX_DAY = 3
+
+
 
 fun main(args: Array<String>) {
     try{
@@ -46,6 +48,7 @@ fun selectDay(givenDay: String? = null): Day? {
     return when(day.toIntOrNull()) {
         1 -> Day1()
         2 -> Day2()
+        3 -> Day3()
         else -> throw Exception("Unexpected exit from selectDay")
     }
 }
