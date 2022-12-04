@@ -6,6 +6,7 @@ It saves lines!!! (like 5... and maybe makes the code a bit more unclear as a re
 I kinda wanna go back and clean `Main` up, I intended to be able to pass in args to select a day/part without the prompts. 
 I should do that.
 Later.
+EDIT: ok it takes args now, but it's kinda sloppy
 
 ### Dec 3, 2022
 Been a while since I journaled or blogged or reflected on code I wrote anywhere but my own head.
