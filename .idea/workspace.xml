@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Finished Day 2">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode2022.iml" afterDir="false" />
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed day 3">
+      <change afterPath="$PROJECT_DIR$/CHANGEBLOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Day4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +44,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/afass/IdeaProjects/AdventOfCode2022&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -91,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670009264739</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished Day 2">
+      <created>1670009954786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670009954786</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed issue with day 2 part 1">
+      <created>1670038746170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670038746170</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Completed day 3">
+      <created>1670081138700</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670081138700</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +127,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished Day 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Day 2" />
+    <MESSAGE value="Fixed issue with day 2 part 1" />
+    <MESSAGE value="Completed day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
