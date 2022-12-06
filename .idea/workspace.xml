@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed day 4">
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Changed Main to take args">
+      <change afterPath="$PROJECT_DIR$/inputs/Day5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Day6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGEBLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGEBLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +57,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -55,8 +70,53 @@
       <recent name="C:\Users\afass\IdeaProjects\AdventOfCode2022\src\main\kotlin\dev\brdlf\aoc2022\inputs" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true">
+  <component name="RunManager" selected="Kotlin.MainKt Part One Test">
+    <configuration name="MainKt Part One Test" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part a -Test true" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt Part One" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part a -Test false" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt Part Two Test" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part b -Test true" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt Part Two" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part b -Test false" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt Test" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Test true" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt noArgs" type="JetRunConfigurationType" temporary="true">
       <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
       <module name="AdventOfCode2022" />
       <shortenClasspath name="NONE" />
@@ -64,10 +124,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Kotlin.MainKt Test" />
+      <item itemvalue="Kotlin.MainKt Part One" />
+      <item itemvalue="Kotlin.MainKt Part One Test" />
+      <item itemvalue="Kotlin.MainKt noArgs" />
+      <item itemvalue="Kotlin.MainKt Part Two" />
+      <item itemvalue="Kotlin.MainKt Part Two Test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.MainKt noArgs" />
+        <item itemvalue="Kotlin.MainKt noArgs" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670171198847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed Main to take args">
+      <created>1670172121432</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670172121432</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,7 +209,8 @@
     <MESSAGE value="Fixed issue with day 2 part 1" />
     <MESSAGE value="Completed day 3" />
     <MESSAGE value="Completed day 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 4" />
+    <MESSAGE value="Changed Main to take args" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Main to take args" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

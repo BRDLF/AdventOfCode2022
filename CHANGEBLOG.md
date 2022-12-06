@@ -1,3 +1,16 @@
+### Dec 6, 2022
+Didn't start as early as i'd wanted to, lots of errands about the house.
+But holy heck does Kotlin's `.distinct()` come in handy. Made this thing a breeze.
+Also I still haven't implemented `args` properly... need to fix that.
+
+Ok done.
+
+### Dec 5, 2022
+Easy enough. Had a bit of an issue with IntelliJ's text editor removing trailing whitespace causing an outofbounds error when trying to fill the array.
+Fixed this by editing in notepad++. I probably could have just clarified that it's a txt file. It's fine though, otherwise everything went well.
+
+I also added test arguments, and changed `Day` from an interface to an abstract class.
+
 ### Dec 4, 2022
 Whew, did day 4. The collection functions included in Kotlin make quick work of this stuff.
 Not that it's hard to just, write an extension function yourself. That's what I ended up doing for part Two here.

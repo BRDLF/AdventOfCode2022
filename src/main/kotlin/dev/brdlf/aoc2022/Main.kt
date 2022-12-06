@@ -3,7 +3,7 @@ package dev.brdlf.aoc2022
 import java.io.FileNotFoundException
 
 //TODO: Update as needed
-const val MAX_DAY = 4
+const val MAX_DAY = 6
 
 fun main(args: Array<String>) {
     try{
@@ -14,20 +14,25 @@ fun main(args: Array<String>) {
     }
 }
 
-fun run(args: Array<String?>) {
-    val day = selectDay(args[0])?: return
-    val part = selectPart(args[1])?: return
-    print("The answer to Day ${day.number} part $part is: ")
+fun run(args: Map<String, String>) {
+    val day = selectDay(args["-Day"], args["-Test"].toBoolean())?: return
+    val part = selectPart(args["-Part"])?: return
+    print("The answer to Day ${day.number} part $part ${day.isTesting()}is: ")
     when(part){
         "One" -> day.a()
         "Two" -> day.b()
     }
 }
 
-private fun Array<String>.cleanArgs(): Array<String?> {
-    val output = arrayOf<String?>(null, null)
-    if (this.isEmpty()) return output
-    for (n in 0 until kotlin.math.max(this.size, 2)) output[n] = this[n]
+private fun Array<String>.cleanArgs(): Map<String, String> {
+    val output = mutableMapOf<String, String>()
+    for (item in this){
+        if (!item.startsWith("-")) continue
+        val index = this.indexOf(item)
+        if (index == -1 || index == this.lastIndex) continue
+        if (this[index+1].startsWith("-")) continue
+        output.put(item, this[index+1])
+    }
     return output
 }
 
@@ -47,14 +52,16 @@ fun selectPart(arg: String? = null): String? {
     }
 }
 
-fun selectDay(givenDay: String? = null): Day? {
+fun selectDay(givenDay: String? = null, isTest: Boolean = false): Day? {
     //TODO: Update as needed
     val day = inputDay(givenDay)?: return null
     return when(day.toIntOrNull()) {
-        1 -> Day1()
-        2 -> Day2()
-        3 -> Day3()
-        4 -> Day4()
+        1 -> Day1(isTest)
+        2 -> Day2(isTest)
+        3 -> Day3(isTest)
+        4 -> Day4(isTest)
+        5 -> Day5(isTest)
+        6 -> Day6(isTest)
         else -> throw Exception("Unexpected exit from selectDay")
     }
 }

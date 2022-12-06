@@ -2,12 +2,11 @@ package dev.brdlf.aoc2022
 
 import java.util.*
 
-class Day2: Day {
+class Day2(isTest: Boolean): Day(isTest) {
     override val number: Int
         get() = 2
 
     companion object{
-        private val test = listOf("A Y", "B X", "C Z")
         private val abstractionMap = mapOf("A" to 0, "B" to 1, "C" to 2, "X" to 0, "Y" to 1, "Z" to 2)
     }
 

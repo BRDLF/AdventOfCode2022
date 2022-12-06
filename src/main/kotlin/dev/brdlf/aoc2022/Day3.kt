@@ -3,21 +3,14 @@ package dev.brdlf.aoc2022
 import java.lang.Exception
 import java.util.*
 
-class Day3: Day {
+class Day3(isTest: Boolean): Day(isTest){
     override val number: Int
         get() = 3
-
-    private val test = listOf("vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg",
-            "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-            "ttgJtRGJQctTZtZT",
-            "CrZsJsPPZsGzwwsLwLmpwMDw",)
 
     private val rucksacks: MutableList<String> = mutableListOf()
     private val pMap: MutableMap<Char, Int> = mutableMapOf()
 
-    fun setPMap(){
+    private fun setPMap(){
         var n = 1
         for (c in 'a'..'z') pMap[c] = n++
         for (c in 'A'..'Z') pMap[c] = n++

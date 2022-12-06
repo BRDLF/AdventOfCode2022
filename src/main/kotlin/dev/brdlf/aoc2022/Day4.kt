@@ -2,18 +2,10 @@ package dev.brdlf.aoc2022
 
 import java.lang.Exception
 
-class Day4: Day {
+class Day4(isTest: Boolean): Day(isTest) {
     override val number: Int
         get() = 4
 
-    private val test = listOf(
-        "2-4,6-8",
-        "2-3,4-5",
-        "5-7,7-9",
-        "2-8,3-7",
-        "6-6,4-6",
-        "2-6,4-8",
-    )
     private val elfPairs: MutableList<String> = mutableListOf()
 
     init {

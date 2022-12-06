@@ -2,7 +2,7 @@ package dev.brdlf.aoc2022
 
 import java.util.Scanner
 
-class Day1: Day {
+class Day1(isTest: Boolean): Day(isTest) {
     override val number: Int
         get() = 1
 
