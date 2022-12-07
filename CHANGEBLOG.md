@@ -1,3 +1,7 @@
+### Dec 7, 2022
+It's starting to get properly messy, now. By not thinking ahead in some of these problems i've gotten really sloppy & inefficient.
+But, it's complete. I'm thankful for that.
+
 ### Dec 6, 2022
 Didn't start as early as i'd wanted to, lots of errands about the house.
 But holy heck does Kotlin's `.distinct()` come in handy. Made this thing a breeze.

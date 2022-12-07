@@ -3,7 +3,7 @@ package dev.brdlf.aoc2022
 import java.io.FileNotFoundException
 
 //TODO: Update as needed
-const val MAX_DAY = 6
+const val MAX_DAY = 7
 
 fun main(args: Array<String>) {
     try{
@@ -52,8 +52,8 @@ fun selectPart(arg: String? = null): String? {
     }
 }
 
+//TODO: Update as needed
 fun selectDay(givenDay: String? = null, isTest: Boolean = false): Day? {
-    //TODO: Update as needed
     val day = inputDay(givenDay)?: return null
     return when(day.toIntOrNull()) {
         1 -> Day1(isTest)
@@ -62,6 +62,7 @@ fun selectDay(givenDay: String? = null, isTest: Boolean = false): Day? {
         4 -> Day4(isTest)
         5 -> Day5(isTest)
         6 -> Day6(isTest)
+        7 -> Day7(isTest)
         else -> throw Exception("Unexpected exit from selectDay")
     }
 }

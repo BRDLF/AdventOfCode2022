@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Changed Main to take args">
-      <change afterPath="$PROJECT_DIR$/inputs/Day5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Day6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" afterDir="false" />
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files">
+      <change afterPath="$PROJECT_DIR$/inputs/Day7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGEBLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGEBLOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +58,7 @@
       <recent name="C:\Users\afass\IdeaProjects\AdventOfCode2022\src\main\kotlin\dev\brdlf\aoc2022\inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt Part One Test">
+  <component name="RunManager" selected="Kotlin.MainKt Part Two">
     <configuration name="MainKt Part One Test" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
       <module name="AdventOfCode2022" />
@@ -128,9 +116,9 @@
       <item itemvalue="Kotlin.MainKt Test" />
       <item itemvalue="Kotlin.MainKt Part One" />
       <item itemvalue="Kotlin.MainKt Part One Test" />
-      <item itemvalue="Kotlin.MainKt noArgs" />
       <item itemvalue="Kotlin.MainKt Part Two" />
       <item itemvalue="Kotlin.MainKt Part Two Test" />
+      <item itemvalue="Kotlin.MainKt noArgs" />
     </list>
     <recent_temporary>
       <list>
@@ -190,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670172121432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files">
+      <created>1670357670151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670357670152</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +205,23 @@
     <MESSAGE value="Completed day 3" />
     <MESSAGE value="Completed day 4" />
     <MESSAGE value="Changed Main to take args" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Main to take args" />
+    <MESSAGE value="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt</url>
+          <line>55</line>
+          <properties class="dev.brdlf.aoc2022.Day7" method="getSize">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
