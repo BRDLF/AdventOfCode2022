@@ -3,7 +3,8 @@ package dev.brdlf.aoc2022
 import java.lang.Exception
 
 class Day3(isTest: Boolean): Day(isTest){
-    override val number: Int = 3
+    override val number: Int
+        get ()  = 3
 
     private val pMap: Map<Char, Int> = setPMap()
 

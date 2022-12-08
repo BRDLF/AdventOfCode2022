@@ -6,7 +6,8 @@ const val STORAGE_SPACE = 70_000_000
 const val TARGET_SPACE = 30_000_000
 
 class Day7(isTest: Boolean): Day(isTest) {
-    override val number: Int = 7
+    override val number: Int
+        get ()  = 7
 
     private var currentDirectory: Place = Place("/")
     data class Place(val name: String, val size: Long? = null, val children: Set<String>? = null, val parent: String? = null)

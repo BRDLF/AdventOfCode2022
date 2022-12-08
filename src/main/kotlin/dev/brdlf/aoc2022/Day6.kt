@@ -4,7 +4,8 @@ const val PART_ONE = 4
 const val PART_TWO = 14
 
 class Day6(isTest: Boolean): Day(isTest) {
-    override val number: Int = 6
+    override val number: Int
+        get ()  = 6
 
     private val signal: String = inputList[0]
 

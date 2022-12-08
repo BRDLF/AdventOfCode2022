@@ -1,7 +1,8 @@
 package dev.brdlf.aoc2022
 
 class Day5(isTest: Boolean): Day(isTest) {
-    override val number: Int = 5
+    override val number: Int
+        get ()  = 5
 
     private lateinit var yard: List<MutableList<Char>>
     private lateinit var instructions: List<String>

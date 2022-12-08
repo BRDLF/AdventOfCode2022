@@ -3,7 +3,8 @@ package dev.brdlf.aoc2022
 import java.lang.Exception
 
 class Day4(isTest: Boolean): Day(isTest) {
-    override val number: Int = 4
+    override val number: Int
+        get ()  = 4
 
     private fun String.toRangeList(): List<Int> {
         val (start, end) = this.split("-").map{ it.toIntOrNull()?: throw Exception("Unable to parse int from $this") }

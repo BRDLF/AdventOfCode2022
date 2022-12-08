@@ -1,7 +1,8 @@
 package dev.brdlf.aoc2022
 
 class Day1(isTest: Boolean): Day(isTest) {
-    override val number: Int = 1
+    override val number: Int
+        get ()  = 1
 
     private val calMap: MutableList<Int> = mutableListOf<Int>()
 
