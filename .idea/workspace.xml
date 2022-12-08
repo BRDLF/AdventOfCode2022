@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files">
-      <change afterPath="$PROJECT_DIR$/inputs/Day7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" afterDir="false" />
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed Day 7">
+      <change afterPath="$PROJECT_DIR$/inputs/Day8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day8.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGEBLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGEBLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <recent name="C:\Users\afass\IdeaProjects\AdventOfCode2022\src\main\kotlin\dev\brdlf\aoc2022\inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt Part Two">
+  <component name="RunManager" selected="Kotlin.MainKt Part One">
     <configuration name="MainKt Part One Test" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
       <module name="AdventOfCode2022" />
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670357670152</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Completed Day 7">
+      <created>1670446699615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670446699615</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +213,8 @@
     <MESSAGE value="Completed day 4" />
     <MESSAGE value="Changed Main to take args" />
     <MESSAGE value="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files" />
+    <MESSAGE value="Completed Day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Day 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
