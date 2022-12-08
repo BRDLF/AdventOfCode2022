@@ -21,6 +21,11 @@ fun run(args: Map<String, String>) {
     when(part){
         "One" -> day.a()
         "Two" -> day.b()
+        "Both" -> {
+            day.a()
+            print("Part Two: ")
+            day.b()
+        }
     }
 }
 
@@ -46,6 +51,7 @@ fun selectPart(arg: String? = null): String? {
         return when(part!!.lowercase()) {
             "a", "1", "one" -> "One"
             "b", "2", "two" -> "Two"
+            "c", "3", "both" -> "Both"
             "exit" -> null
             else -> continue
         }

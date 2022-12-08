@@ -4,10 +4,9 @@ const val PART_ONE = 4
 const val PART_TWO = 14
 
 class Day6(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 6
+    override val number: Int = 6
 
-    private val signal: String = getScanner().nextLine()
+    private val signal: String = inputList[0]
 
     private fun logic(size: Int): Int {
         val stack = mutableListOf<Char>()

@@ -1,24 +1,21 @@
 package dev.brdlf.aoc2022
 
-import java.util.Scanner
-
 class Day1(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 1
+    override val number: Int = 1
 
     private val calMap: MutableList<Int> = mutableListOf<Int>()
 
     init{
-        val sc: Scanner = getScanner()
         var calorieCount = 0
-        while(sc.hasNext()) {
-            val buffer = sc.nextLine().toIntOrNull()
-
-            if (buffer==null) {
-                calMap.add(calorieCount)
+        for (row in inputList) {
+            val lineValue = row.toIntOrNull()
+            if (lineValue==null) {
+            lineValue?: calMap.add(calorieCount)
                 calorieCount = 0
             }
-            else calorieCount += buffer
+            else {
+                calorieCount += lineValue
+            }
         }
         calMap.sortDescending()
     }

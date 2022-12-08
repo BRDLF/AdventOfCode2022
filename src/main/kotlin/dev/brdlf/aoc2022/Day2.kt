@@ -1,23 +1,10 @@
 package dev.brdlf.aoc2022
 
-import java.util.*
-
 class Day2(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 2
+    override val number: Int = 2
 
     companion object{
         private val abstractionMap = mapOf("A" to 0, "B" to 1, "C" to 2, "X" to 0, "Y" to 1, "Z" to 2)
-    }
-
-    private val guide: MutableList<String> = mutableListOf()
-
-    init {
-        val sc: Scanner = getScanner()
-        while(sc.hasNext()) {
-            val scanLine = sc.nextLine()
-            guide.add(scanLine)
-        }
     }
 
     private fun lineToPair(line: String): Pair<Int, Int> {
@@ -47,7 +34,7 @@ class Day2(isTest: Boolean): Day(isTest) {
 
     private fun logic(part: (Pair<Int, Int>) -> Int) {
         var total = 0
-        for (match in guide) {
+        for (match in inputList) {
             total += part(lineToPair(match))
         }
         println(total)

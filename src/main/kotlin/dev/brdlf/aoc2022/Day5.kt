@@ -1,23 +1,25 @@
 package dev.brdlf.aoc2022
 
 class Day5(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 5
+    override val number: Int = 5
 
-    private val yard: MutableList<MutableList<Char>> = mutableListOf()
-    private val instructions: MutableList<String> = mutableListOf()
+    private lateinit var yard: List<MutableList<Char>>
+    private lateinit var instructions: List<String>
 
-    init {
-        val sc = getScanner()
+    private fun resetYards() {
         var isInInstructions = false
-        while (sc.hasNextLine()){
+        val tempYard: MutableList<MutableList<Char>> = mutableListOf()
+        val tempInstruction: MutableList<String> = mutableListOf()
+        for (line in inputList) {
             if (isInInstructions) {
-                instructions.add(sc.nextLine())
+                tempInstruction.add(line)
             }
             else {
-                isInInstructions = fillYard(sc.nextLine())
+                isInInstructions = tempYard.fillYard(line)
             }
         }
+        yard = tempYard
+        instructions = tempInstruction
     }
 
     private val single: (Int, Int, Int) -> Unit = { count, from, to ->
@@ -38,26 +40,31 @@ class Day5(isTest: Boolean): Day(isTest) {
         myFun(split[1].toInt(), split[3].toInt(), split[5].toInt())
     }
 
-    private fun fillYard(s: String): Boolean {
+    private fun MutableList<MutableList<Char>>.fillYard(s: String): Boolean {
         if (s.isEmpty()) return true
         val buckets = s.chunked(4).map{ it[1] }
-        if (yard.isEmpty()) {
-            repeat(buckets.size) { yard.add(mutableListOf()) }
+        if (this.isEmpty()) {
+            repeat(buckets.size) { this.add(mutableListOf()) }
         }
-        buckets.forEachIndexed{ i, n -> if (n.isLetter()) {yard[i].add(0, n)}}
+        buckets.forEachIndexed{ i, n -> if (n.isLetter()) {this[i].add(0, n)}}
         return false
     }
 
-    private fun showYardTop() { for (stack in yard) print(stack.last()) }
+    private fun showYardTop() {
+        for (stack in yard) print(stack.last())
+        println()
+    }
 
     private fun showYard() {for (stack in yard) println(stack)}
 
     override fun a() {
+        resetYards()
         for (s in instructions) s.parse(single)
         showYardTop()
     }
 
     override fun b() {
+        resetYards()
         for (s in instructions) s.parse(multi)
         showYardTop()
     }

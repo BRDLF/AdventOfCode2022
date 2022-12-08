@@ -3,17 +3,7 @@ package dev.brdlf.aoc2022
 import java.lang.Exception
 
 class Day4(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 4
-
-    private val elfPairs: MutableList<String> = mutableListOf()
-
-    init {
-        val sc = getScanner()
-        while (sc.hasNextLine()) {
-            elfPairs.add(sc.nextLine())
-        }
-    }
+    override val number: Int = 4
 
     private fun String.toRangeList(): List<Int> {
         val (start, end) = this.split("-").map{ it.toIntOrNull()?: throw Exception("Unable to parse int from $this") }
@@ -40,11 +30,11 @@ class Day4(isTest: Boolean): Day(isTest) {
     }
 
     override fun a() {
-        logic(elfPairs, partOne)
+        logic(inputList, partOne)
     }
 
     override fun b() {
-        logic(elfPairs, partTwo)
+        logic(inputList, partTwo)
     }
 
 

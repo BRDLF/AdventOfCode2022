@@ -1,8 +1,7 @@
 package dev.brdlf.aoc2022
 
 class Day8(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 8
+    override val number: Int = 8
 
     var forest: List<List<Int>> = listOf(listOf())
 

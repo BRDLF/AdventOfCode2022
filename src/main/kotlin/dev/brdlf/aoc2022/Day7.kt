@@ -6,20 +6,14 @@ const val STORAGE_SPACE = 70_000_000
 const val TARGET_SPACE = 30_000_000
 
 class Day7(isTest: Boolean): Day(isTest) {
-    override val number: Int
-        get() = 7
+    override val number: Int = 7
 
-    private val commands: MutableList<String> = mutableListOf()
     private var currentDirectory: Place = Place("/")
     data class Place(val name: String, val size: Long? = null, val children: Set<String>? = null, val parent: String? = null)
     private val store = mutableMapOf<String, Place>(currentDirectory.name to currentDirectory)
 
     init {
-        val sc = getScanner()
-        while (sc.hasNextLine()){
-            commands.add(sc.nextLine())
-        }
-        for (c in commands) {
+        for (c in inputList) {
             if (c.startsWith('$')) command(c)
             else notCommand(c)
         }
@@ -55,7 +49,7 @@ class Day7(isTest: Boolean): Day(isTest) {
 
     private fun getSize(s: String): Long {
         val current = store[s]?: throw Exception("I don't exist: $s")
-        var size = current.size?: current.children?.fold(0L){ acc, child -> acc + getSize(child)}!!
+        val size = current.size?: current.children?.fold(0L){ acc, child -> acc + getSize(child)}!!
         store[s] = current.copy(size = size)
         return size
     }

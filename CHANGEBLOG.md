@@ -2,6 +2,12 @@
 I'm worried that it's too early for me to get lazy like this. There's the idiom "work smarter not harder" and I feel I'm ignoring that.
 With that in mind, this didn't take long, so that's nice at least. I'm satisfied but not happy, if that makes any sense.
 
+##### Minor update
+I actually went back and cleaned up(barely) the earlier week to better use the `inputList` val. \
+In some cases, they just access it directly. In others, like day 5, there's some more abstraction that stays in the `init` \
+Day 5 actually had to be changed a bit to allow the new `-Part Both` parameter that I added to make testing easier.
+Maybe some other time I'll add a `-Day All` parameter in case I make big sweeping changes...
+
 ### Dec 7, 2022
 It's starting to get properly messy, now. By not thinking ahead in some of these problems i've gotten really sloppy & inefficient.
 But, it's complete. I'm thankful for that.

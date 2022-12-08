@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed Day 7">
-      <change afterPath="$PROJECT_DIR$/inputs/Day8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/Test8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day8.kt" afterDir="false" />
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Completed Day 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,25 @@
       <recent name="C:\Users\afass\IdeaProjects\AdventOfCode2022\src\main\kotlin\dev\brdlf\aoc2022\inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt Part One">
+  <component name="RunManager" selected="Kotlin.MainKt Part Both">
+    <configuration name="MainKt Part Both Test" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part c -Test True" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt Part Both" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
+      <module name="AdventOfCode2022" />
+      <option name="PROGRAM_PARAMETERS" value="-Part c -Test false" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt Part One Test" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
       <module name="AdventOfCode2022" />
@@ -114,6 +135,8 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.MainKt Test" />
+      <item itemvalue="Kotlin.MainKt Part Both" />
+      <item itemvalue="Kotlin.MainKt Part Both Test" />
       <item itemvalue="Kotlin.MainKt Part One" />
       <item itemvalue="Kotlin.MainKt Part One Test" />
       <item itemvalue="Kotlin.MainKt Part Two" />
@@ -192,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670446699615</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Completed Day 8">
+      <created>1670513169353</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670513169353</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,22 +244,8 @@
     <MESSAGE value="Changed Main to take args" />
     <MESSAGE value="Completed Day 6&#10;Also finally properly fixed argument handling (I hope)&#10;Changed Test inputs for days 1-4 from string lists to separate files" />
     <MESSAGE value="Completed Day 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Day 7" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt</url>
-          <line>55</line>
-          <properties class="dev.brdlf.aoc2022.Day7" method="getSize">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Completed Day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Day 8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,29 +1,19 @@
 package dev.brdlf.aoc2022
 
 import java.lang.Exception
-import java.util.*
 
 class Day3(isTest: Boolean): Day(isTest){
-    override val number: Int
-        get() = 3
+    override val number: Int = 3
 
-    private val rucksacks: MutableList<String> = mutableListOf()
-    private val pMap: MutableMap<Char, Int> = mutableMapOf()
+    private val pMap: Map<Char, Int> = setPMap()
 
-    private fun setPMap(){
+    private fun setPMap(): Map<Char, Int>{
         var n = 1
-        for (c in 'a'..'z') pMap[c] = n++
-        for (c in 'A'..'Z') pMap[c] = n++
+        val tempMap: MutableMap<Char, Int> = mutableMapOf()
+        for (c in 'a'..'z') tempMap[c] = n++
+        for (c in 'A'..'Z') tempMap[c] = n++
 //        pMap.forEach { (it, index) -> println("$it: $index")}
-    }
-
-    init {
-        val sc: Scanner = getScanner()
-        while(sc.hasNext()) {
-            val scanLine = sc.nextLine()
-            rucksacks.add(scanLine)
-        }
-        setPMap()
+        return tempMap
     }
 
     private fun findShared(first: String, second:String): Char {
@@ -44,7 +34,7 @@ class Day3(isTest: Boolean): Day(isTest){
 
     override fun a() {
         val list = mutableListOf<Char>()
-        for (sack in rucksacks){
+        for (sack in inputList){
             val firstCompartment = sack.take(sack.length/2)
             val secondCompartment = sack.drop(sack.length/2)
             list.add(findShared(firstCompartment, secondCompartment))
@@ -55,7 +45,7 @@ class Day3(isTest: Boolean): Day(isTest){
 
     override fun b() {
         val list = mutableListOf<Int>()
-        val sackIterator = rucksacks.listIterator()
+        val sackIterator = inputList.listIterator()
         while (sackIterator.hasNext()){
             val first = sackIterator.next()
             val second = sackIterator.next()
