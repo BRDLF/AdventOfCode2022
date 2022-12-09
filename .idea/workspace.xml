@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Cleanup to better use inputList">
+    <list default="true" id="65e6b872-bf5e-47ba-adbe-5fe37c679b98" name="Changes" comment="Wasted time redoing Day8&#10;Why am I like this">
+      <change afterPath="$PROJECT_DIR$/inputs/Day9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/Test9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day9.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day5.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day6.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day7.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Day8.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGEBLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGEBLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/brdlf/aoc2022/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
       <recent name="C:\Users\afass\IdeaProjects\AdventOfCode2022\src\main\kotlin\dev\brdlf\aoc2022\inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt Part Both">
+  <component name="RunManager" selected="Kotlin.MainKt noArgs">
     <configuration name="MainKt Part Both Test" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="dev.brdlf.aoc2022.MainKt" />
       <module name="AdventOfCode2022" />
@@ -229,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670515988422</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Wasted time redoing Day8&#10;Why am I like this">
+      <created>1670527812699</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670527812699</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +257,8 @@
     <MESSAGE value="Completed Day 7" />
     <MESSAGE value="Completed Day 8" />
     <MESSAGE value="Cleanup to better use inputList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup to better use inputList" />
+    <MESSAGE value="Wasted time redoing Day8&#10;Why am I like this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wasted time redoing Day8&#10;Why am I like this" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

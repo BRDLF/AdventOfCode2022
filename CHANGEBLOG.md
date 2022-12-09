@@ -1,3 +1,8 @@
+### Dec 9, 2022
+That was fun! But i maybe took too long to do it. I got tripped up in part 2 until I re-read the prompt. 
+Seems I misunderstood the rules for knots moving at first. \
+I seem to do that a lot! I need to be better about it.
+
 ### Dec 8, 2022
 I'm worried that it's too early for me to get lazy like this. There's the idiom "work smarter not harder" and I feel I'm ignoring that.
 With that in mind, this didn't take long, so that's nice at least. I'm satisfied but not happy, if that makes any sense.
