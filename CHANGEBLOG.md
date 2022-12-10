@@ -1,3 +1,8 @@
+### Dec 10, 2022
+Easier one today. Or maybe I'm just more comfortable with this kind of problem? \
+I had a bit of a tricky issue debugging part two, trying to visualize where the problem was (I wasn't subtracting 1 from the cycle before comparing it to the sprite position) \
+Once I figured that out, though. No problems at all. I had fun with this one :)
+
 ### Dec 9, 2022
 That was fun! But i maybe took too long to do it. I got tripped up in part 2 until I re-read the prompt. 
 Seems I misunderstood the rules for knots moving at first. \
