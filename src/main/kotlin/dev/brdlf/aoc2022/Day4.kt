@@ -21,9 +21,9 @@ class Day4(isTest: Boolean): Day(isTest) {
         return false
     }
 
-    private fun logic(input: List<String>, myFun: (List<Int>, List<Int>) -> Boolean) {
+    private fun logic(myFun: (List<Int>, List<Int>) -> Boolean) {
         var counter = 0
-        for (pair in input){
+        for (pair in inputList){
             val (fooElf, barElf) = pair.split(",").map { it.toRangeList() }
             if (myFun(fooElf, barElf) || myFun(barElf, fooElf)) counter++
         }
@@ -31,11 +31,11 @@ class Day4(isTest: Boolean): Day(isTest) {
     }
 
     override fun a() {
-        logic(inputList, partOne)
+        logic(partOne)
     }
 
     override fun b() {
-        logic(inputList, partTwo)
+        logic(partTwo)
     }
 
 

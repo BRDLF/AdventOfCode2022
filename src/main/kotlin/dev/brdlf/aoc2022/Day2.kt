@@ -8,7 +8,7 @@ class Day2(isTest: Boolean): Day(isTest) {
         private val abstractionMap = mapOf("A" to 0, "B" to 1, "C" to 2, "X" to 0, "Y" to 1, "Z" to 2)
     }
 
-    private fun lineToPair(line: String): Pair<Int, Int> {
+    fun lineToPair(line: String): Pair<Int, Int> {
         val first = abstractionMap[line.split(" ")[0]]?: throw Exception()
         val second = abstractionMap[line.split(" ")[1]]?: throw Exception()
         return Pair(first, second)

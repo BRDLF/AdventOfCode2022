@@ -73,11 +73,11 @@ class Day10(isTest: Boolean): Day(isTest) {
                     else -> throw Exception("Unexpected function")
                 }
         }
-        println(total)
     }
 
     override fun a() {
         part(op = p1TotalAdd)
+        println(total)
     }
 
     override fun b() {

@@ -10,7 +10,7 @@ abstract class Day(protected val TEST: Boolean = false) {
     protected val inputList: List<String>
     fun isTesting(): String = if (this.TEST) "(testing) " else ""
     private fun getScanner(): Scanner {
-        val file = if (TEST) File("inputs/Test$number") else File("inputs/Day$number")
+        val file = if (TEST) File("inputs/$number/Test$number") else File("inputs/$number/Day$number")
         return Scanner(file)
     }
     init {

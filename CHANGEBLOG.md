@@ -1,3 +1,11 @@
+### Dec 11, 2022
+
+Part One was fine, probably could have been cleaner with how I parsed input, but it got the job done.
+Part Two gave me some problems though, I'm not used to working with such big numbers, and my initial thought of "just use BigInteger" didn't solve anything. \
+I was just not thinking about this one right, ended up looking up other peoples' solutions to try to understand what the real problem was.
+Even then, I ran into issues where my Ints were overflowing, and it took me longer than I'd like to admit to figure out that's what was happening.
+Oh well, a learning experience if nothing else.
+
 ### Dec 10, 2022
 Easier one today. Or maybe I'm just more comfortable with this kind of problem? \
 I had a bit of a tricky issue debugging part two, trying to visualize where the problem was (I wasn't subtracting 1 from the cycle before comparing it to the sprite position) \
